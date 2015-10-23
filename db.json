@@ -1,0 +1,30 @@
+{
+  "forca": [
+    {
+      "dificuldade": "normal",
+      "palavras" : [
+        {
+          "palavra": "clarineta",
+          "palavra": "bicicleta",
+          "palavra": "biblioteca",
+          "palavra": "museo",
+          "palavra": "escola",
+          "palavra": "cavalo"
+        }
+      ]
+    },
+    {
+      "dificuldade": "nunes",
+      "palavras" : [
+        {
+          "palavra": "cabeleireiros",
+          "palavra": "tangamandapio",
+          "palavra": "carangueijeira",
+          "palavra": "otorrinolaringologista",
+          "palavra": "parangaricotirrimiuraro",
+          "palavra": "inconstitucionalidade"
+        }
+      ]
+    }
+  ]
+}
