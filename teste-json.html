@@ -36,6 +36,23 @@
         );
 	}
 
+	function getUsuarios () {
+		$.get('http://localhost:3000/usuarios')
+		.done(function(data) {
+			console.log(data);
+		})
+	}
+
+	function getUsuariosById (id) {
+		$.get('http://localhost:3000/usuarios')
+		.done(function(data) {
+			var usuario = data.filter(function(element) {
+				return element.id === id;
+			});
+			console.log(usuario);
+		})
+	}
+
 	</script>
 </body>
 </html>

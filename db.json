@@ -29,18 +29,19 @@
   ],
   "usuarios": [
     {
+      "id": 1,
       "nome": "Marcos",
       "pontos": 150
     },
     {
+      "id": 2,
       "nome": "Joao",
-      "pontos": 250,
-      "id": "17fa868d-64d6-478a-97bc-b1645f8e33d0"
+      "pontos": 250
     },
     {
-      "nome": "Joao",
-      "pontos": 250,
-      "id": "113f9d83-49be-4db4-843f-6b7b7bb8b37b"
+      "nome": "Maria",
+      "pontos": 125,
+      "id": 3
     }
   ]
 }
