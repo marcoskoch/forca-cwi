@@ -30,6 +30,12 @@
 		})
 	}
 
+	function setUsuario (nome, pontos) {
+		$.post('http://localhost:3000/usuarios', 
+            { nome: nome, pontos: pontos }
+        );
+	}
+
 	</script>
 </body>
 </html>
