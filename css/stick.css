@@ -69,11 +69,46 @@
 	right: 25%;
 }
 
-.corpo:before {
+.braco1 {
 	position: absolute;
 	width: 5px;
-	height: 30%;
+	height: 20%;
 	background: #000;
-	top: 30%;
+	top: 25%;
 	right: 30%;
+	-webkit-transform: rotate(50deg);
+    transform: rotate(50deg);
+}
+
+.braco2 {
+	position: absolute;
+	width: 5px;
+	height: 20%;
+	background: #000;
+	top: 25%;
+	right: 20%;
+	-webkit-transform: rotate(-50deg);
+    transform: rotate(-50deg);
+}
+
+.perna1 {
+	position: absolute;
+	width: 5px;
+	height: 20%;
+	background: #000;
+	top: 50%;
+	right: 30%;
+	-webkit-transform: rotate(50deg);
+    transform: rotate(50deg);
+}
+
+.perna2 {
+	position: absolute;
+	width: 5px;
+	height: 20%;
+	background: #000;
+	top: 50%;
+	right: 20%;
+	-webkit-transform: rotate(-50deg);
+    transform: rotate(-50deg);
 }
