@@ -9,10 +9,16 @@ $('#dificuldadeLI').text(dif);
 
 function verificarErro(char){
   var erro = $('#errado').text();
+  erroSom();
   if(erro.substring(7).indexOf(char) === -1){
     $('#errado').html(erro + char +' ');
 
   }
+}
+
+function erroSom(){
+  var audio = $('#errrrou')[0];
+  audio.play();
 }
 
 $("#A").click(function(){
