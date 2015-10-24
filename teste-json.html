@@ -6,7 +6,7 @@
 	<title></title>
 </head>
 <body>
-	
+
 
 	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
 	<script type="text/javascript">
@@ -16,7 +16,7 @@
     }
 
 	function getPalavraPorDificuldade (dificuldade) {
-		var indiceDificuldade; 
+		var indiceDificuldade;
 		if (dificuldade === 'normal') {
 			indiceDificuldade = 0;
 		} else{
@@ -31,7 +31,7 @@
 	}
 
 	function setUsuario (nome, pontos) {
-		$.post('http://localhost:3000/usuarios', 
+		$.post('http://localhost:3000/usuarios',
             { nome: nome, pontos: pontos }
         );
 	}

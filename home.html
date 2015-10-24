@@ -10,8 +10,13 @@
 	<link rel="stylesheet" href="css/teclado.css">
 	<link rel="stylesheet" href="css/stick.css">
 	<link rel="stylesheet" href="css/palavra.css">
+	<link rel="stylesheet" href="css/erro.css">
 </head>
 <body>
+	<audio id="erro">
+		<source src="sound/errou.mp3"></source>
+	</audio>
+
 	<div class="body">
 		<!-- MENU -->
 		<header class="header clear-fix">
@@ -61,82 +66,82 @@
 						<div class="teclado">
 							<ul class="reset-list">
 								<li class="inline-block">
-									<button>A</button>
+									<button id="A">A</button>
 								</li>
 								<li class="inline-block">
-									<button>B</button>
+									<button id="B">B</button>
 								</li>
 								<li class="inline-block">
-									<button>C</button>
+									<button id="C">C</button>
 								</li>
 								<li class="inline-block">
-									<button>D</button>
+									<button id="D">D</button>
 								</li>
 								<li class="inline-block">
-									<button>E</button>
+									<button id="E">E</button>
 								</li>
 								<li class="inline-block">
-									<button>F</button>
+									<button id="F">F</button>
 								</li>
 								<li class="inline-block">
-									<button>G</button>
+									<button id="G">G</button>
 								</li>
 								<li class="inline-block">
-									<button>H</button>
+									<button id="H">H</button>
 								</li>
 								<li class="inline-block">
-									<button>I</button>
+									<button id="I">I</button>
 								</li>
 								<li class="inline-block">
-									<button>J</button>
+									<button id="J">J</button>
 								</li>
 								<li class="inline-block">
-									<button>K</button>
+									<button id="K">K</button>
 								</li>
 								<li class="inline-block">
-									<button>L</button>
+									<button id="L">L</button>
 								</li>
 								<li class="inline-block">
-									<button>M</button>
+									<button id="M">M</button>
 								</li>
 								<li class="inline-block">
-									<button>N</button>
+									<button id="N">N</button>
 								</li>
 								<li class="inline-block">
-									<button>O</button>
+									<button id="O">O</button>
 								</li>
 								<li class="inline-block">
-									<button>P</button>
+									<button id="P">P</button>
 								</li>
 								<li class="inline-block">
-									<button>Q</button>
+									<button id="Q">Q</button>
 								</li>
 								<li class="inline-block">
-									<button>R</button>
+									<button id="R">R</button>
 								</li>
 								<li class="inline-block">
-									<button>S</button>
+									<button id="S">S</button>
 								</li>
 								<li class="inline-block">
-									<button>T</button>
+									<button id="T">T</button>
 								</li>
 								<li class="inline-block">
-									<button>U</button>
+									<button id="U">U</button>
 								</li>
 								<li class="inline-block">
-									<button>V</button>
+									<button id="V">V</button>
 								</li>
 								<li class="inline-block">
-									<button>W</button>
+									<button id="W">W</button>
 								</li>
 								<li class="inline-block">
-									<button>X</button>
+									<button id="X">X</button>
 								</li>
 								<li class="inline-block">
-									<button>Y</button>
+									<button id="Y">Y</button>
 								</li>
 								<li class="inline-block">
-									<button>Z</button>
+									<button id="Z">Z</button>
 								</li>
 							</ul>
 						</div>
@@ -145,8 +150,9 @@
 			</div>
 		</section>
 	</div>
+	<div id="errado">Erros: </div>
 	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-	<script src="script.js" type="text/javascript"></script>
-	<script src="script-home.js" type="text/javascript"></script>
+	<script src="script/script-home.js" type="text/javascript"></script>
+	<script src="script/script-erros.js" type="text/javascript"></script>
 </body>
 </html>
