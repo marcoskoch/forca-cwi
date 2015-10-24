@@ -36,7 +36,7 @@ function getPalavraPorDificuldade (dificuldade) {
 		var palavra = palavras.palavras[0][indicePalavra];
 		for(var i = 0, len = palavra.length; i < len; ++i) {
 			$('#letras').append(
-				$('<li class="inline-block" >').html(palavra[i])
+				$('<li class="inline-block char">').html(palavra[i])
 			);
 		}
 	});
