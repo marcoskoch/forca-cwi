@@ -29,14 +29,14 @@
   ],
   "usuarios": [
     {
-      "id": 1,
       "nome": "Marcos",
-      "pontos": 150
+      "pontos": 150,
+      "id": 1
     },
     {
-      "id": 2,
       "nome": "Joao",
-      "pontos": 250
+      "pontos": 250,
+      "id": 2
     },
     {
       "nome": "Maria",

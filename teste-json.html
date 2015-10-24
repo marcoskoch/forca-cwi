@@ -53,6 +53,12 @@
 		})
 	}
 
+	function atualizarPontosUsuario (idUsuario, novosPontos) {
+		$.post('http://localhost:3000/usuarios', 
+            { id: idUsuario, pontos: novosPontos }
+        );
+	}
+
 	</script>
 </body>
 </html>
