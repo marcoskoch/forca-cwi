@@ -2,8 +2,17 @@ function getURLParameter(name) {
 	return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,""])[1].replace(/\+/g, '%20'))||null;
 }
 
-var nome = 'Usuário: '+getURLParameter('nome');
-var dif = 'Dificuldade: ' +getURLParameter('dificuldade');
+if(getURLParameter('nome') !== null){
+	var nome = 'Usuário: '+getURLParameter('nome');
+}else{
+	var nome = 'Usuário: Desconhecido';
+}
+
+if(getURLParameter('dificuldade') !== null){
+	var dif = 'Dificuldade: ' +getURLParameter('dificuldade');
+}else{
+	var dif = 'Dificuldade: Normal';
+}
 $('#nomeLI').text(nome);
 $('#dificuldadeLI').text(dif);
 
@@ -28,7 +37,8 @@ function getPalavraPorDificuldade (dificuldade) {
 		indiceDificuldade = 0;
 	} else{
 		indiceDificuldade = 1;
-	};
+	}
+
 	var indicePalavra = sortearPalavra();
 	$.get('http://localhost:3000/forca')
 	.done(function(data) {
@@ -41,4 +51,3 @@ function getPalavraPorDificuldade (dificuldade) {
 		}
 	});
 }
-
