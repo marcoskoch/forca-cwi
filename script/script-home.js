@@ -7,7 +7,7 @@ var dif = 'Dificuldade: ' +getURLParameter('dificuldade');
 $('#nomeLI').text(nome);
 $('#dificuldadeLI').text(dif);
 
-getPalavraPorDificuldade(dif);
+getPalavraPorDificuldade(getURLParameter('dificuldade'));
 
 function verificarErro(char){
 	var erro = $('#errado').text();
