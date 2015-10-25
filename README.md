@@ -2,10 +2,11 @@
 
 Jogo da forca desenvolvido por alunos do [Projeto CRESCER](http://www.cwi.com.br/Empresa/Crescer) da [CWI Software](http://www.cwi.com.br).
 
-## Indíce
+## Índice
 
 * Dependências
 * Instruções
+* Alunos
 
 ## Dependências
 
@@ -27,3 +28,5 @@ Em outros sistemas como o Linux você deverá instalar rodando o seguinte comand
 ### json-server
 
 ## Intruções
+
+## Alunoss
