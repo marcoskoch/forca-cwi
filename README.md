@@ -27,6 +27,21 @@ Em outros sistemas como o Linux você deverá instalar rodando o seguinte comand
 
 ### json-server
 
+Para rodar o json nós utilizamos o [json-server](https://github.com/typicode/json-server), para instalá-lo digite o seguinte comando em seu terminal ou prompt de comando: ``` $ npm install -g json-server ``` .
+
 ## Intruções
 
-## Alunoss
+Antes de iniciar o jogo você deve navegar até o diretório do jogo e iniciar o json-server com o seguinte comando:
+
+* $ json-server db.json --watch
+
+Pronto! Agora você está pronto para jogar.
+
+## Alunos
+
+Esse projeto foi desenvolvido por: 
+
+* [Diogo](https://github.com/dodireis)
+* [Iago](https://github.com/iagodahlem)
+* [Marcos](https://github.com/marcoskoch)
+* [Willian](https://github.com/WillianWerlang)
