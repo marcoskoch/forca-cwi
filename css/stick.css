@@ -3,7 +3,7 @@
 ========================================== */
 
 .stick-content {
-	margin: 0 auto ;
+	margin: 0;
 	width: 100%;
 	height: 300px;
 	position: relative;
@@ -52,33 +52,28 @@
 
 .sticker {
 	position: relative;
-	width: 100%;
-	height: 100%;
+	width: 180px;
+	height: 530px;
+	top: -230px;
+	right: -248px;
+	margin: 0;
 	animation-duration: 5s;
-  	animation-name: rotation;
+  	animation-name: rotation-sticker;
   	animation-iteration-count: infinite;
 }
 
-@keyframes rotation {
+@keyframes rotation-sticker {	
 	0% {
-		-webkit-transform: rotate(0deg);
-    	transform: rotate(0deg);	
-	}
-	25% {
-		-webkit-transform: rotate(15deg);
-    	transform: rotate(15deg);
+		-webkit-transform: rotate(8deg);
+    	transform: rotate(8deg);
 	}
 	50% {
-		-webkit-transform: rotate(0deg);
-    	transform: rotate(0deg);
-	}
-	75% {
-		-webkit-transform: rotate(-15deg);
-    	transform: rotate(-15deg);
+		-webkit-transform: rotate(-8deg);
+    	transform: rotate(-8deg);
 	}
 	100% {
-		-webkit-transform: rotate(0deg);
-    	transform: rotate(0deg);	
+		-webkit-transform: rotate(8deg);
+    	transform: rotate(8deg);	
 	}
 }
 
@@ -88,8 +83,8 @@
 	height: 40px;
 	border: solid 5px #000;
 	border-radius: 100%;
-	top: 10%;
-	right: 20%;
+	top: 49%;
+	right: 38%;
 }
 
 .eye1 {
@@ -155,52 +150,152 @@
 .corpo {
 	position: absolute;
 	width: 5px;
-	height: 30%;
+	height: 20%;
 	background: #000;
-	top: 25%;
-	right: 25%;
+	top: 58%;
+	right: 50%;
 }
 
 .braco1 {
 	position: absolute;
 	width: 5px;
-	height: 20%;
+	height: 12%;
 	background: #000;
-	top: 25%;
-	right: 30%;
+	top: 58%;
+	right: 64%;
 	-webkit-transform: rotate(50deg);
     transform: rotate(50deg);
+
+    animation-duration: 5s;
+  	animation-name: rotation-braco-um;
+  	animation-iteration-count: infinite;
+}
+
+@keyframes rotation-braco-um {	
+	0% {
+		-webkit-transform: rotate(-22deg);
+    	transform: rotate(-22deg);
+    	top: 60%;
+    	right: 43%;
+	}
+	50% {
+		-webkit-transform: rotate(22deg);
+    	transform: rotate(22deg);
+  		top: 59%;
+    	right: 56%;
+	}
+	100% {
+		-webkit-transform: rotate(-22deg);
+    	transform: rotate(-22deg);
+    	top: 60%;
+    	right: 43%;	
+	}
 }
 
 .braco2 {
 	position: absolute;
 	width: 5px;
-	height: 20%;
+	height: 12%;
 	background: #000;
-	top: 25%;
-	right: 20%;
+	top: 58%;
+	right: 36%;
 	-webkit-transform: rotate(-50deg);
     transform: rotate(-50deg);
+
+    animation-duration: 5s;
+  	animation-name: rotation-braco-dois;
+  	animation-iteration-count: infinite;
+}
+
+@keyframes rotation-braco-dois {
+	0% {
+		-webkit-transform: rotate(-36deg);
+    	transform: rotate(-36deg);
+    	top: 59%;
+    	right: 40%;
+	}
+	50% {
+		-webkit-transform: rotate(36deg);
+    	transform: rotate(36deg);
+  		top: 59%;
+    	right: 60%;
+	}
+	100% {
+		-webkit-transform: rotate(-36deg);
+    	transform: rotate(-36deg);
+    	top: 59%;
+    	right: 40%;	
+	}
 }
 
 .perna1 {
 	position: absolute;
 	width: 5px;
-	height: 20%;
+	height: 12%;
 	background: #000;
-	top: 50%;
-	right: 30%;
+	top: 75%;
+	right: 64%;
 	-webkit-transform: rotate(50deg);
     transform: rotate(50deg);
+
+    animation-duration: 5s;
+  	animation-name: rotation-perna-um;
+  	animation-iteration-count: infinite;
+}
+
+@keyframes rotation-perna-um {	
+	0% {
+		-webkit-transform: rotate(-22deg);
+    	transform: rotate(-22deg);
+    	top: 77%;
+    	right: 44%;
+	}
+	50% {
+		-webkit-transform: rotate(22deg);
+    	transform: rotate(22deg);
+  		top: 77%;
+    	right: 56%;
+	}
+	100% {
+		-webkit-transform: rotate(-22deg);
+    	transform: rotate(-22deg);
+    	top: 77%;
+    	right: 44%;	
+	}
 }
 
 .perna2 {
 	position: absolute;
 	width: 5px;
-	height: 20%;
+	height: 12%;
 	background: #000;
-	top: 50%;
-	right: 20%;
+	top: 75%;
+	right: 36%;
 	-webkit-transform: rotate(-50deg);
     transform: rotate(-50deg);
+
+    animation-duration: 5s;
+  	animation-name: rotation-perna-dois;
+  	animation-iteration-count: infinite;
+}
+
+@keyframes rotation-perna-dois {
+	0% {
+		-webkit-transform: rotate(-36deg);
+    	transform: rotate(-36deg);
+    	top: 77%;
+    	right: 40%;
+	}
+	50% {
+		-webkit-transform: rotate(36deg);
+    	transform: rotate(36deg);
+  		top: 77%;
+    	right: 60%;
+	}
+	100% {
+		-webkit-transform: rotate(-36deg);
+    	transform: rotate(-36deg);
+    	top: 77%;
+    	right: 40%;
+	}
 }
