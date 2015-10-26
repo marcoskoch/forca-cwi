@@ -9,26 +9,6 @@
 	position: relative;
 }
 
-.sticker {
-	position: relative;
-	width: 100%;
-	height: 100%;
-	animation-duration: 3s;
-  	animation-name: rotation;
-  	animation-iteration-count: infinite;
-}
-
-//@keyframes rotation {
-	from {
-		-webkit-transform: rotate(0deg);
-    	transform: rotate(0deg);	
-	}
-	to {
-		-webkit-transform: rotate(15deg);
-    	transform: rotate(15deg);
-	}
-}
-
 .espaco-sticker {
 	margin-bottom: 20px;
 }
@@ -70,6 +50,38 @@
 	left: 10%;
 }
 
+.sticker {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	animation-duration: 5s;
+  	animation-name: rotation;
+  	animation-iteration-count: infinite;
+}
+
+@keyframes rotation {
+	0% {
+		-webkit-transform: rotate(0deg);
+    	transform: rotate(0deg);	
+	}
+	25% {
+		-webkit-transform: rotate(15deg);
+    	transform: rotate(15deg);
+	}
+	50% {
+		-webkit-transform: rotate(0deg);
+    	transform: rotate(0deg);
+	}
+	75% {
+		-webkit-transform: rotate(-15deg);
+    	transform: rotate(-15deg);
+	}
+	100% {
+		-webkit-transform: rotate(0deg);
+    	transform: rotate(0deg);	
+	}
+}
+
 .head {
 	position: absolute;
 	width: 40px;
@@ -84,7 +96,7 @@
 	position: absolute;
 	width: 15px;
 	height: 15px;
-	top: 6px;
+	top: 8px;
 	left: 3px;
 	-webkit-transform: rotate(45deg);
     transform: rotate(45deg);
@@ -114,7 +126,7 @@
 	position: absolute;
 	width: 15px;
 	height: 15px;
-	top: 6px;
+	top: 8px;
 	right: 4px;
 	-webkit-transform: rotate(45deg);
     transform: rotate(45deg);
