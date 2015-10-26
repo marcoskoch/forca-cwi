@@ -21,8 +21,11 @@ $('#dificuldadeLI').text(dif);
 
 //Sorteia a palvra através da dificuldade
 var senha;
+var stringAuxiliar;
 var contador = 0;
 var limite;
+var acabou = false;
+
 getPalavraPorDificuldade(getURLParameter('dificuldade'));
 
 function sortearPalavra(){
@@ -44,6 +47,7 @@ function getPalavraPorDificuldade (dificuldade) {
 		var palavras = data[indiceDificuldade];
 		var palavra = palavras.palavras[0][indicePalavra];
 		senha = palavra;
+		stringAuxiliar = senha;
 		for(var i = 0, len = palavra.length; i < len; ++i) {
 			$('#letras').append(
 				$('<li class="inline-block '+palavra[i]+' char">').html(palavra[i])
@@ -63,19 +67,32 @@ if(getURLParameter('dificuldade') === 'Nunes'){
 $('#contador').html(contador + " / " + limite);
 
 function verificarErro(char){
-	if(senha.toUpperCase().indexOf(char) === -1){
-		var erro = $('#letras-erradas').text();
-		erroSom();
-		if(erro.substring(7).indexOf(char) === -1){
-			$('#letras-erradas').html(erro + char +' ');
-			contador++;
-			$('#contador').html(contador + " / " + limite);
-			if(contador === limite){
-				location.replace('ranking.html');
+	if(!acabou){
+		if(senha.toUpperCase().indexOf(char) === -1){
+			var erro = $('#letras-erradas').text();
+			erroSom();
+			if(erro.substring(7).indexOf(char) === -1){
+				$('#letras-erradas').html(erro + char +' ');
+				contador++;
+				$('#contador').html(contador + " / " + limite);
+				if(contador === limite){
+					acabou = true;
+					$('#letras-erradas').html('Você perdeu, vai chorar?');
+					setInterval(function(){location.replace('ranking.html');}, 5000);
+				}
+			}
+		} else if(senha.toUpperCase().indexOf(char) >= 0){
+			$('.'+char.toLowerCase() +'').css('color', '#000');
+			stringAuxiliar = stringAuxiliar.toUpperCase();
+			while(stringAuxiliar.indexOf(char) !== -1){
+				stringAuxiliar = stringAuxiliar.replace(char, '');
+			}
+			if(stringAuxiliar.length === 0){
+				acabou = true;
+				$('#letras-erradas').html('Você venceu Illuminati!');
+				setInterval(function(){location.replace('ranking.html');}, 5000);
 			}
 		}
-	} else if(senha.toUpperCase().indexOf(char) >= 0){
-		$('.'+char.toLowerCase() +'').css('color', '#000');	
 	}
 }
 
