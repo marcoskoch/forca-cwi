@@ -23,11 +23,16 @@ Primeiro você vai precisar do node em sua máquina, então se você ainda não 
 ### NPM
 
 Você vai precisar do gerenciador de pacotes NPM para instalar o pacote necessário para rodar o jogo. Se você tiver usando Windows ou Mac OS, o NPM vem por default junto ao node, mas não custa rodar ``` $ npm -v ``` para ter certeza.
-Em outros sistemas como o Linux você deverá instalar rodando o seguinte comando alterando o gerenciador de pacotes para sua devida distribuição: ``` $ sudo apt-get install npm ``` .
+
+Em outros sistemas como o Linux você deverá instalar rodando o seguinte comando alterando o gerenciador de pacotes para sua devida distribuição:
+
+``` $ sudo apt-get install npm ```
 
 ### json-server
 
-Para rodar o json nós utilizamos o [json-server](https://github.com/typicode/json-server), para instalá-lo digite o seguinte comando em seu terminal ou prompt de comando: ``` $ npm install -g json-server ``` .
+Para rodar o json nós utilizamos o [json-server](https://github.com/typicode/json-server), para instalá-lo digite o seguinte comando em seu terminal ou prompt de comando: 
+
+``` $ npm install -g json-server ```
 
 ## Intruções
 
@@ -35,7 +40,7 @@ Antes de iniciar o jogo você deve navegar até o diretório do jogo e iniciar o
 
 * $ json-server db.json --watch
 
-Pronto! Agora você está pronto para jogar.
+Pronto! Agora você está pronto para jogar. Abra o arquivo ``` login.html ``` e divirta-se.
 
 ## Alunos
 
