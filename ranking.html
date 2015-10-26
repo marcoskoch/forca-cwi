@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="css/ranking-grid.css" />
+        <link rel="stylesheet" href="css/ranking-style.css" />
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/normalize.css">
+    </head>
+    <body>
+
+        <!-- MENU -->
+        <header class="header clear-fix col col-s-12 col-m-12 col-l-12">
+            <h1 class="name pull-left">Jogo da Forca</h1>
+
+            <nav class="pull-right">
+                <ul class="reset-list lista">
+                    <li id='nomeLI' class="inline-block">Nome</li>
+                    <li id='dificuldadeLI' class="inline-block">Dificuldade</li>
+                </ul>
+            </nav>
+        </header>
+        <!-- FIM MENU -->
+        
+        <button id="btnInserir">Inserir</button>
+        <div class="container">
+            <div class="row">
+                <div class="col col-s-8 col-m-8 col-l-8">
+                    <div class="col col-s-offset-2 col-m-offset-2 col-l-offset-2">
+                        <h2>RANK - CWI FORCA</h2>
+                        <h3>Cabeças vão rolar</h3>
+                        <table class="table tbl-ranking">
+                            <thead>
+                                <tr>
+                                    <th class="tbl-rank">Rank</th>
+                                    <th class="tbl-name">Nome</th>
+                                    <th class="tbl-points">Pontuação</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="http://code.jquery.com/jquery-2.1.4.min.js">
+        </script>
+        <script src="js/script-ranking.js">
+            $( document ).ready( $.consultarRanking );
+        </script>
+    </body>
+</html>
