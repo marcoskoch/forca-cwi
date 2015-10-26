@@ -46,7 +46,7 @@ function getPalavraPorDificuldade (dificuldade) {
 		senha = palavra;
 		for(var i = 0, len = palavra.length; i < len; ++i) {
 			$('#letras').append(
-				$('<li class="inline-block char">').html(palavra[i])
+				$('<li class="inline-block '+palavra[i]+' char">').html(palavra[i])
 			);
 		}
 	});
@@ -74,6 +74,8 @@ function verificarErro(char){
 				location.replace('ranking.html');
 			}
 		}
+	} else if(senha.toUpperCase().indexOf(char) === 0){
+		$('.'+char.toLowerCase() +'').css('color', '#000');	
 	}
 }
 
