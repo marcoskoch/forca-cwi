@@ -19,7 +19,7 @@ $('#dificuldadeLI').text(dif);
 
 //--------------------------------------------------------
 
-//Sorteia a palvra através da dificuldade
+// Sorteia a palavra através da dificuldade
 var senha;
 var stringAuxiliar;
 var contador = 0;
@@ -57,7 +57,7 @@ function getPalavraPorDificuldade (dificuldade) {
 }
 //----------------------------------------------------------
 
-//Verifica os erros
+// Verifica os erros
 if(getURLParameter('dificuldade') === 'Nunes'){
 	limite = 2;
 }else {
