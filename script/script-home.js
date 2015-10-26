@@ -74,7 +74,7 @@ function verificarErro(char){
 				location.replace('ranking.html');
 			}
 		}
-	} else if(senha.toUpperCase().indexOf(char) === 0){
+	} else if(senha.toUpperCase().indexOf(char) >= 0){
 		$('.'+char.toLowerCase() +'').css('color', '#000');	
 	}
 }
