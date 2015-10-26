@@ -51,7 +51,7 @@ function getPalavraPorDificuldade (dificuldade) {
 		for(var i = 0, len = palavra.length; i < len; ++i) {
 			$('#letras').append(
 				$('<li class="inline-block '+palavra[i]+' char">').html(palavra[i])
-			);
+				);
 		}
 	});
 }
@@ -205,4 +205,16 @@ $("#Y").click(function(){
 
 $("#Z").click(function(){
 	verificarErro('Z');
+});
+
+$("#btn-chutar-palavra").click(function() {
+	if ($("#chutar-palavra").val().toLowerCase() === senha.toLowerCase()) {
+		acabou = true;
+		$('#letras-erradas').html('Você venceu Illuminati!');
+		setInterval(function(){location.replace('ranking.html');}, 5000);
+	} else{
+		acabou = true;
+		$('#letras-erradas').html('Você perdeu, vai chorar?');
+		setInterval(function(){location.replace('ranking.html');}, 5000);
+	}
 });
