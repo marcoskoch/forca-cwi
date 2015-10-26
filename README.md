@@ -38,7 +38,7 @@ Para rodar o json nós utilizamos o [json-server](https://github.com/typicode/js
 
 Antes de iniciar o jogo você deve navegar até o diretório do jogo e iniciar o json-server com o seguinte comando:
 
-* $ json-server db.json --watch
+``` $ json-server db.json --watch ```
 
 Pronto! Agora você está pronto para jogar. Abra o arquivo ``` login.html ``` e divirta-se.
 
