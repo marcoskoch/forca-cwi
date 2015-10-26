@@ -1,6 +1,6 @@
-#errado{
+#letras-erradas{
   margin-top: 50px;
-  margin-left: 580px;
+  margin-left: 550px;
   width: 300px;
   height: 30px;
   border-radius: 5px;
@@ -8,4 +8,11 @@
   font-size: 15px;
   text-align: center;
   padding-top: 10px;
+}
+
+#contador{
+  float: right;
+  display: block;
+  margin-right: 300px;
+  font-size: 30px;
 }
